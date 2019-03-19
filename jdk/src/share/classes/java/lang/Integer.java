@@ -942,6 +942,7 @@ public final class Integer extends Number implements Comparable<Integer> {
      *          primitive {@code int} value represented by this
      *          {@code Integer} object.
      */
+    // Integer 重写了 equals 方法,为了满足定义: 如果两个类 equals返回true,hashCode也相同,因此需要重写 hashCode
     @Override
     public int hashCode() {
         return Integer.hashCode(value);
